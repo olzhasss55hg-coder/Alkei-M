@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="kk" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Әлкей Марғұлан — Қазақстан археология ғылымының негізін қалаушы</title>
+    <meta name="description" content="Әлкей Марғұланның өмірі, ғылыми қызметі және Қазақстан археологиясына қосқан үлесі туралы тарихи-ғұмырнамалық сайт">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Fixed Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <!-- Symmetrical Kazakh Ornament SVG Logo -->
+                <svg class="logo-icon" viewBox="0 0 100 100">
+                    <path d="M50 10 C35 30 65 30 50 50 C35 70 65 70 50 90 M50 50 C20 40 20 60 50 50 C80 40 80 60 50 50" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span data-i18n="logo">Әлкей Марғұлан</span>
+            </a>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item active"><a href="#biography" data-i18n="nav_bio">Өмірбаяны</a></li>
+                    <li class="nav-item"><a href="#research" data-i18n="nav_research">Тарихи зерттеулері</a></li>
+                    <li class="nav-item"><a href="#expeditions" data-i18n="nav_expeditions">Экспедициялары</a></li>
+                    <li class="nav-item"><a href="#role" data-i18n="nav_role">Ғылыми рөлі</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-controls">
+                <!-- Theme Switcher (Sun/Moon SVG) -->
+                <button class="theme-toggle" id="theme-btn" aria-label="Toggle Theme">
+                    <svg viewBox="0 0 24 24" id="theme-icon">
+                        <!-- Moon Icon by default -->
+                        <path d="M12 3c.132 0 .263 0 .393.007a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z"/>
+                    </svg>
+                </button>
+                <!-- Language Switcher -->
+                <button class="lang-toggle" id="lang-btn">РУС</button>
+                <!-- Mobile Menu Button -->
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="pattern-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <!-- Golden Kazakh Ornament Accent -->
+                <svg class="hero-ornament-top" viewBox="0 0 100 30" fill="none" stroke="#c9a227" stroke-width="2">
+                    <path d="M10 15 Q25 5 50 15 T90 15 M10 15 Q25 25 50 15 T90 15" stroke-linecap="round"/>
+                </svg>
+                <span class="hero-pretitle" data-i18n="hero_pretitle">Тарихи тұлға</span>
+                <h1 class="hero-title" data-i18n="hero_title">Әлкей Марғұлан</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">Қазақстан археология ғылымының негізін қалаушы, көрнекті ғалым, академик, этнограф және филолог.</p>
+                <div class="hero-cta">
+                    <a href="#biography" class="btn-gold" data-i18n="hero_btn_more">Толығырақ танысу</a>
+                    <a href="#expeditions" class="btn-outline" data-i18n="hero_btn_exp">Экспедициялар</a>
+                </div>
+            </div>
+            <div class="hero-media fade-in">
+                <div class="hero-image-wrapper">
+                    <img src="images/alkei_margulan.png" alt="Әлкей Марғұлан портреті" class="hero-image" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: ӨМІРБАЯНЫ (BIOGRAPHY) -->
+    <section id="biography">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-title" data-i18n="bio_title">Өмірбаяны</h2>
+                <div class="section-divider">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2 L15 10 L23 10 L17 15 L19 23 L12 18 L5 23 L7 15 L1 10 L9 10 Z"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="bio-grid">
+                <div class="bio-media fade-in">
+                    <div class="bio-card-frame">
+                        <img src="images/alkei_margulan.png" alt="Әлкей Марғұлан жұмыс барысында" class="bio-photo" loading="lazy">
+                        <div class="bio-info-overlay">
+                            <span class="bio-date" data-i18n="bio_years">1904 - 1985</span>
+                            <p class="bio-place" data-i18n="bio_birthplace">Павлодар облысы, Баянауыл ауданы</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bio-content fade-in">
+                    <p class="bio-lead" data-i18n="bio_lead">Әлкей Хақанұлы Марғұлан — қазақ мәдениеті мен тарихын зерттеуде өлшеусіз із қалдырған әмбебап ғұлама ғалым.</p>
+                    <p class="bio-paragraph" data-i18n="bio_p1">Ол Баянауылдың баурайында дүниеге келіп, жастайынан халықтық фольклор мен дастан-жырларды бойына сіңіріп өсті. Семей педтехникумын бітірген соң, Ленинград мемлекеттік университетінің шығыстану факультетінде білімін шыңдап, Түркітану және өнертану салаларын терең зерттеді.</p>
+                    <p class="bio-paragraph" data-i18n="bio_p2">Марғұлан ғылыми қызметін филология мен әдебиеттен бастап, кейіннен Қазақстанның бай тарихы мен археологиясына біржола бет бұрды. Оның жетекшілігімен өткен археологиялық қазба жұмыстары қазақ даласында орта ғасырлық және қола дәуіріндегі өркениеттердің гүлденгенін әлемге паш етті.</p>
+                    
+                    <ul class="bio-milestones">
+                        <li>
+                            <div class="bio-milestone-bullet">1</div>
+                            <div class="bio-milestone-text">
+                                <strong data-i18n="bio_m1_t">1929 - 1938 жылдар</strong>
+                                <span data-i18n="bio_m1_d">Ленинградтағы оқу және ғылыми ізденістер, алғашқы фольклортану мақалалары.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bio-milestone-bullet">2</div>
+                            <div class="bio-milestone-text">
+                                <strong data-i18n="bio_m2_t">1946 жыл</strong>
+                                <span data-i18n="bio_m2_d">Орталық Қазақстан археологиялық экспедициясының негізін қалауы және ұзақ жылғы зерттеулерінің бастауы.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bio-milestone-bullet">3</div>
+                            <div class="bio-milestone-text">
+                                <strong data-i18n="bio_m3_t">1958 жыл</strong>
+                                <span data-i18n="bio_m3_d">Тарих ғылымдарының докторы, Қазақ КСР Ғылым академиясының академигі атағын алуы.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: ТАРИХИ ЗЕРТТЕУЛЕРІ (RESEARCH) -->
+    <section id="research">
+        <div class="pattern-overlay"></div>
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-title" data-i18n="res_title">Тарихи зерттеулері</h2>
+                <div class="section-divider">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2 L15 10 L23 10 L17 15 L19 23 L12 18 L5 23 L7 15 L1 10 L9 10 Z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="research-grid">
+                <!-- Card 1: Begazy-Dandybai -->
+                <div class="research-card fade-in">
+                    <div class="research-card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2zm0 8H7v-2h10v2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="research-card-title" data-i18n="res_c1_t">Беғазы-Дәндібай мәдениеті</h3>
+                    <p class="research-card-text" data-i18n="res_c1_d">Қола дәуіріне жататын бірегей көшпенділер мәдениетін ашып, жан-жақты зерттеді. Бұл зерттеу қазақ жерінде ежелден кен өндіру мен металлургияның дамығанын дәлелдеді.</p>
+                    <a href="#expeditions" class="research-card-more">
+                        <span data-i18n="res_btn_read">Зерттеуді көру</span>
+                        <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                    </a>
+                </div>
+
+                <!-- Card 2: Kazakh History -->
+                <div class="research-card fade-in">
+                    <div class="research-card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 11.55C9.64 9.35 6.48 8 3 8v11c3.48 0 6.64 1.35 9 3.55 2.36-2.2 5.52-3.55 9-3.55V8c-3.48 0-6.64 1.35-9 3.55zM12 2c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="research-card-title" data-i18n="res_c2_t">Фольклор мен Шоқан мұрасы</h3>
+                    <p class="research-card-text" data-i18n="res_c2_d">Шоқан Уәлихановтың ғылыми мұрасын жинақтап, академиялық басылымын шығарды. Қазақтың «Манас», «Қозы Көрпеш - Баян Сұлу» дастандарын тарихи-әдеби тұрғыдан талдады.</p>
+                    <a href="#role" class="research-card-more">
+                        <span data-i18n="res_btn_read">Зерттеуді көру</span>
+                        <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                    </a>
+                </div>
+
+                <!-- Card 3: Ethnography -->
+                <div class="research-card fade-in">
+                    <div class="research-card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.25z"/>
+                        </svg>
+                    </div>
+                    <h3 class="research-card-title" data-i18n="res_c3_t">Этнография және қолөнер</h3>
+                    <p class="research-card-text" data-i18n="res_c3_d">Ежелгі көшпенділердің сәулет өнері, бейнелеу өнері мен қолөнер бұйымдарын зерттеді. Қазақ ою-өрнектерінің символикалық мәнін ашқан іргелі еңбектер жазды.</p>
+                    <a href="#role" class="research-card-more">
+                        <span data-i18n="res_btn_read">Зерттеуді көру</span>
+                        <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: АРХЕОЛОГИЯЛЫҚ ЭКСПЕДИЦИЯЛАРЫ (EXPEDITIONS) -->
+    <section id="expeditions">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-title" data-i18n="exp_title">Археологиялық экспедициялары</h2>
+                <div class="section-divider">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2 L15 10 L23 10 L17 15 L19 23 L12 18 L5 23 L7 15 L1 10 L9 10 Z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="expeditions-container">
+                <!-- Карта стиліндегі блок -->
+                <div class="map-block fade-in">
+                    <div class="map-illustration">
+                        <img src="images/expedition_camp.png" alt="Археологиялық карта" loading="lazy">
+                    </div>
+                    <div class="map-content">
+                        <h3 class="map-title" data-i18n="exp_map_t">Орталық Қазақстан экспедициясы</h3>
+                        <p class="map-text" data-i18n="exp_map_d">Әлкей Марғұлан жетекшілік еткен атақты Орталық Қазақстан археологиялық экспедициясы Сарыарқа даласындағы ежелгі өркениеттер ошақтарын жүйелі түрде зерттеді. Бұл қазба жұмыстары далалық мәдениеттің ежелгі дәуірін қайта жаңғыртты.</p>
+                        <div class="map-points">
+                            <div class="map-point">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                <span data-i18n="exp_p1">Беғазы обалары мен кешендері</span>
+                            </div>
+                            <div class="map-point">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                <span data-i18n="exp_p2">Ұлытау маңындағы көне қалалар (Басқамыр, Аяққамыр)</span>
+                            </div>
+                            <div class="map-point">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                <span data-i18n="exp_p3">Тамғалы шатқалындағы петроглифтер мен суреттер</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Экспедициялар Галереясы (Хронология) -->
+                <div>
+                    <h3 class="gallery-section-title" data-i18n="exp_gal_title">Экспедициялар тарихы және Жәдігерлер</h3>
+                    <div class="gallery-grid">
+                        <!-- Card 1: 1946 -->
+                        <div class="gallery-card fade-in" data-modal="exp1">
+                            <span class="gallery-card-badge">1946</span>
+                            <div class="gallery-image-wrapper">
+                                <img src="images/begazy_dandybai.png" alt="Беғазы қазбалары" loading="lazy">
+                                <div class="gallery-card-overlay">
+                                    <svg viewBox="0 0 24 24" style="width: 40px; height: 40px; fill: var(--gold); margin: auto;"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                </div>
+                            </div>
+                            <div class="gallery-card-info">
+                                <h4 class="gallery-card-title" data-i18n="exp_g1_t">Орталық Қазақстан қазбалары</h4>
+                                <p class="gallery-card-desc" data-i18n="exp_g1_d">Қола және ерте темір дәуіріне жататын қоныстар мен обаларды кең көлемде зерттеу жұмыстары басталды.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: 1950s -->
+                        <div class="gallery-card fade-in" data-modal="exp2">
+                            <span class="gallery-card-badge">1950</span>
+                            <div class="gallery-image-wrapper">
+                                <img src="images/expedition_camp.png" alt="Ұлытау маңындағы қалалар" loading="lazy">
+                                <div class="gallery-card-overlay">
+                                    <svg viewBox="0 0 24 24" style="width: 40px; height: 40px; fill: var(--gold); margin: auto;"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                </div>
+                            </div>
+                            <div class="gallery-card-info">
+                                <h4 class="gallery-card-title" data-i18n="exp_g2_t">Ұлытау мен Сырдария өңірі</h4>
+                                <p class="gallery-card-desc" data-i18n="exp_g2_d">Ортағасырлық Басқамыр және Аяққамыр қалашықтарының сәулеттік құрылымдары мен суару жүйелері анықталды.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: 1960s-1970s -->
+                        <div class="gallery-card fade-in" data-modal="exp3">
+                            <span class="gallery-card-badge">1960</span>
+                            <div class="gallery-image-wrapper">
+                                <img src="images/alkei_margulan.png" alt="Беғазы кешені" loading="lazy">
+                                <div class="gallery-card-overlay">
+                                    <svg viewBox="0 0 24 24" style="width: 40px; height: 40px; fill: var(--gold); margin: auto;"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                                </div>
+                            </div>
+                            <div class="gallery-card-info">
+                                <h4 class="gallery-card-title" data-i18n="exp_g3_t">Беғазы мазарларының зерттелуі</h4>
+                                <p class="gallery-card-desc" data-i18n="exp_g3_d">Далалық билеушілер мен қолбасшыларға арналған алып тас мазарлардың құрылысы мен жерлеу дәстүрлері сипатталды.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: ҒЫЛЫМИ РӨЛІ (SCIENTIFIC ROLE) -->
+    <section id="role">
+        <div class="pattern-overlay"></div>
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-title" data-i18n="role_title">Ғылыми рөлі</h2>
+                <div class="section-divider">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2 L15 10 L23 10 L17 15 L19 23 L12 18 L5 23 L7 15 L1 10 L9 10 Z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="role-container">
+                <!-- Статистика блоктары -->
+                <div class="stats-grid">
+                    <!-- Stat 1 -->
+                    <div class="stats-card fade-in">
+                        <span class="stats-number">300+</span>
+                        <span class="stats-label" data-i18n="stat1_label">Ғылыми мақалалар</span>
+                        <p class="stats-desc" data-i18n="stat1_desc">Тарих, филология және өнертану салаларында жарық көрген еңбектер</p>
+                    </div>
+                    <!-- Stat 2 -->
+                    <div class="stats-card fade-in">
+                        <span class="stats-number">30+</span>
+                        <span class="stats-label" data-i18n="stat2_label">Экспедициялар</span>
+                        <p class="stats-desc" data-i18n="stat2_desc">Қазақстанның әр өңірінде жүргізілген далалық археологиялық зерттеулер</p>
+                    </div>
+                    <!-- Stat 3 -->
+                    <div class="stats-card fade-in">
+                        <span class="stats-number">1</span>
+                        <span class="stats-label" data-i18n="stat3_label">Археология мектебі</span>
+                        <p class="stats-desc" data-i18n="stat3_desc">Қазақстандық кәсіби археологтар мен тарихшылардың тұтас буынын дайындады</p>
+                    </div>
+                    <!-- Stat 4 -->
+                    <div class="stats-card fade-in">
+                        <span class="stats-number">14</span>
+                        <span class="stats-label" data-i18n="stat4_label">Монографиялар</span>
+                        <p class="stats-desc" data-i18n="stat4_desc">Қазақ мәдениеті, ежелгі сәулет өнері және эпикалық жырлар бойынша басылымдар</p>
+                    </div>
+                </div>
+
+                <!-- Timeline / Жетістіктер хронологиясы -->
+                <div class="timeline-block fade-in">
+                    <div class="timeline-items">
+                        <!-- Timeline Item 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">1946</span>
+                                <h4 class="timeline-title" data-i18n="time1_t">Ғылым Академиясын құрушылардың бірі</h4>
+                                <p class="timeline-text" data-i18n="time1_d">Қазақ КСР Ғылым академиясын ашуға белсене қатысып, оның академик-хатшысы болып сайланды.</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">1967</span>
+                                <h4 class="timeline-title" data-i18n="time2_t">Мемлекеттік сыйлық лауреаты</h4>
+                                <p class="timeline-text" data-i18n="time2_d">«Орталық Қазақстанның ежелгі мәдениеті» атты іргелі еңбегі үшін мемлекеттік марапатқа ие болды.</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">1984</span>
+                                <h4 class="timeline-title" data-i18n="time3_t">Еңбек Ері және Мәңгілік мұра</h4>
+                                <p class="timeline-text" data-i18n="time3_d">Ғылыми қызметіндегі жоғары жетістіктері мен отандық ғылымды дамытудағы зор еңбегі үшін Социалистік Еңбек Ері атағы берілді.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Symmetrical Kazakh Ornament -->
+            <svg class="footer-ornament" viewBox="0 0 100 30" fill="none" stroke="#c9a227" stroke-width="2">
+                <path d="M10 15 Q25 5 50 15 T90 15 M10 15 Q25 25 50 15 T90 15" stroke-linecap="round"/>
+            </svg>
+            <ul class="footer-links">
+                <li><a href="#biography" data-i18n="nav_bio">Өмірбаяны</a></li>
+                <li><a href="#research" data-i18n="nav_research">Тарихи зерттеулері</a></li>
+                <li><a href="#expeditions" data-i18n="nav_expeditions">Экспедициялары</a></li>
+                <li><a href="#role" data-i18n="nav_role">Ғылыми рөлі</a></li>
+            </ul>
+            <p class="footer-copyright" data-i18n="footer_text">© Әлкей Марғұлан тарихи сайты. Барлық құқықтар қорғалған.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="back-to-top" role="button" aria-label="Back to Top">
+        <svg viewBox="0 0 24 24">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </div>
+
+    <!-- Modal Popup for Gallery details -->
+    <div class="modal" id="gallery-modal" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-img-wrapper">
+                    <img src="" alt="" class="modal-image" id="modal-img">
+                </div>
+                <div class="modal-info">
+                    <span class="modal-date" id="modal-date"></span>
+                    <h3 class="modal-title" id="modal-title"></h3>
+                    <p class="modal-text" id="modal-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
